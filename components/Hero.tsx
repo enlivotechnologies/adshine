@@ -32,7 +32,6 @@ export default function Hero() {
           <div className="max-w-[900px] flex flex-col items-center">
             <h1 className="font-medium tracking-tight text-white leading-[1.1] mb-6 text-[42px] md:text-[60px] lg:text-[68px] xl:text-[76px]">
               Healthier Lives Begin With<br />Better Medicine.
-             
             </h1>
             <p className="text-[15px] md:text-[16px] lg:text-[18px] text-white/80 leading-[1.65] max-w-[500px] mb-10 font-light drop-shadow-sm mx-auto">
               GMP-certified, clinically proven medicines across Orthology and Gynecology care —
