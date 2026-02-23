@@ -1,113 +1,99 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Bone, FlaskConical, Baby, Brain, Dna } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
+// Mirroring the exact data structure from products page
 const products = [
-  {
-    name: "DYDROFLOW",
-    tagline: "The Ultimate Shift to Nurture Life",
-    category: "Pregnancy Care",
-    indication: "Threatened Abortion, Recurrent Pregnancy Loss",
-    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop", // placeholder pills
-    accentColor: "text-[#ec4899]", // pink-500
-    icon: Baby,
+  { 
+    id: 3, 
+    name: "Shine 35", 
+    form: "Tablets", 
+    division: "gynaec", 
+    indication: "PCOS, Hirsutism, Acne"
   },
-  {
-    name: "MYONINE-DM",
-    tagline: "The Only Evidence-Based Treatment",
-    category: "PCOS Management",
-    indication: "PCOS, Irregular Menses",
-    image: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=800&auto=format&fit=crop", // placeholder pills
-    accentColor: "text-[#a855f7]", // purple-500
-    icon: Brain,
+  { 
+    id: 5, 
+    name: "Adpan DSR", 
+    form: "Capsules", 
+    division: "ortho", 
+    indication: "Acid Reflux & GERD"
   },
-  {
-    name: "LACTOJOY",
-    tagline: "Force of Balance",
-    category: "Gut & Vaginal Health",
-    indication: "Bacterial Vaginosis, UTI, PCOS",
-    image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?q=80&w=800&auto=format&fit=crop", // placeholder pills
-    accentColor: "text-[#10b981]", // emerald-500
-    icon: Dna,
+  { 
+    id: 3, 
+    name: "Coral D3", 
+    form: "Softgel Capsules", 
+    division: "ortho", 
+    indication: "Vitamin D3 Deficiency"
   },
-  {
-    name: "CALNINE-XT",
-    tagline: "Active Formula For Active Tomorrow",
-    category: "Bone Health",
-    indication: "Diabetic & Drug Induced Bone Loss",
-    image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=800&auto=format&fit=crop", // placeholder pills
-    accentColor: "text-[#3b82f6]", // blue-500
-    icon: Bone,
-  },
-  {
-    name: "FERNINE-XT",
-    tagline: "Trusted Efficacy with Better Compliance",
-    category: "Iron & Blood",
-    indication: "Iron Deficiency Anemia",
-    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop", // placeholder pills
-    accentColor: "text-[#ef4444]", // red-500
-    icon: FlaskConical,
+  { 
+    id: 6, 
+    name: "Pro 27 DF", 
+    form: "Supplement", 
+    division: "physician", 
+    indication: "Protein Deficiency, Family Nutrition"
   },
 ];
 
 export default function FeaturedProducts() {
   return (
-    <section className="py-24 bg-white overflow-hidden font-sans">
-      <div className="max-w-[1400px] mx-auto">
-        {/* Header */}
-        <div className="px-6 md:px-12 lg:px-20 mb-12 flex items-end justify-between">
-          <div className="flex flex-col items-start text-left">
-            <p className="text-[12px] md:text-[13px] font-semibold text-[#a3a3a3] uppercase tracking-[0.15em] mb-3">
+    <section className="bg-white py-12 lg:py-18 font-sans mb-8">
+      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12">
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
+          <div className="flex flex-col">
+            <p className="text-[16px] lg:text-[18px] font-medium text-[#888888] flex items-center tracking-wide mb-4 lg:mb-6">
+              <span className="text-[12px] mr-3 leading-none relative -top-[1.5px] text-[#b5b5b5]">•</span>
               Featured Products
             </p>
-            <h2 className="text-[#1a1a1a] text-[28px] md:text-[34px] lg:text-[40px] font-medium tracking-tight leading-[1.2]">
-              Formulated for precision. Trusted by doctors.
+            <h2 className="text-[#1a1a1a] text-[30px] lg:text-[36px] xl:text-[46px] leading-[1.45] font-medium tracking-tight">
+              Formulated for precision.
             </h2>
           </div>
+          
           <Link
             href="/products"
-            className="hidden md:flex items-center gap-1.5 text-[14px] font-semibold text-[#4a4a4a] flex-shrink-0 hover:text-black transition-colors"
+            className="group flex items-center gap-2 text-[15px] lg:text-[16px] font-semibold text-[#1a1a1a] hover:text-[#B80004] transition-colors pb-2 md:pb-4 border-b-2 border-transparent hover:border-[#B80004]"
           >
-            View All <ArrowRight className="w-4 h-4" />
+            Explore all products 
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:px-12 lg:px-20">
-          {products.slice(0, 4).map((product, index) => (
+        {/* Cards Grid - Exact replica of Product Page UI */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {products.map((product) => (
             <div
-              key={index}
-              className="w-full bg-[#fafafa] rounded-[20px] overflow-hidden border border-[#eee] transition-shadow duration-300 hover:shadow-[0_10px_30px_-15px_rgba(0,0,0,0.1)]"
+              key={`${product.division}-${product.id}`}
+              className="bg-white rounded-[1.5rem] border border-gray-100 overflow-hidden flex flex-col hover:shadow-sm transition-shadow duration-300"
             >
-              {/* Image */}
-              <div className="relative h-[200px] lg:h-[220px] w-full overflow-hidden bg-white">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover"
-                />
-                {/* Category pill */}
-                <div className={`absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white shadow-sm ${product.accentColor} text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.08em]`}>
-                  <product.icon className="w-3.5 h-3.5" />
-                  {product.category}
+              <div className="bg-gray-50 p-4">
+                <div className="relative w-full h-44 xl:h-52 rounded-xl overflow-hidden bg-gray-200 flex items-center justify-center transition-colors duration-300 group-hover:bg-gray-300">
+                  <span className="text-gray-500 font-medium text-lg xl:text-xl px-4 text-center transition-colors duration-300 group-hover:text-gray-700">
+                    {product.name}
+                  </span>
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6 lg:p-7">
-                <h3 className="text-[18px] lg:text-[20px] font-bold text-[#111] tracking-tight mb-1">
+              <div className="p-6 xl:p-8 flex flex-col gap-3 flex-1">
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-[12px] xl:text-[13px] font-bold text-black/60 tracking-widest">
+                    #{product.id.toString().padStart(2, "0")}
+                  </span>
+                  <span className="text-[11px] xl:text-[12px] font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-gray-100 text-gray-600">
+                    {product.form}
+                  </span>
+                </div>
+
+                <h3 className="text-[18px] xl:text-[20px] font-bold text-black tracking-tight leading-snug">
                   {product.name}
                 </h3>
-                <p className="text-[13px] lg:text-[14px] text-[#7a7a7a] mb-5 italic font-medium">
-                  {product.tagline}
-                </p>
-                <p className="text-[12px] lg:text-[13px] text-[#888] leading-[1.5]">
-                  <span className="font-semibold text-[#555]">For: </span>
+
+                <p className="text-[13px] xl:text-[14px] font-medium text-black/60 leading-relaxed min-h-[40px]">
                   {product.indication}
                 </p>
+
+                
               </div>
             </div>
           ))}

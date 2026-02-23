@@ -7,11 +7,11 @@ export default function Footer() {
   return (
     <footer className="bg-white pt-20 pb-8 text-sm">
 
-      {/* Main content — same container as every other section */}
-      <div className="max-w-7xl mx-auto px-8">
+      {/* Main content */}
+      <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-8 xl:px-12">
 
         {/* 4-column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.5fr] gap-x-16 gap-y-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.5fr] gap-x-8 lg:gap-x-12 xl:gap-x-20 gap-y-12 mb-16">
 
           {/* ── Brand ── */}
           <div className="space-y-6">

@@ -11,7 +11,6 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Products", href: "/products", hasDropdown: true },
     { name: "About Us", href: "/about" },
-    { name: "R&D", href: "/research" },
     { name: "Careers", href: "/careers" },
     { name: "Contact", href: "/contact" },
   ];
@@ -19,8 +18,8 @@ export default function Navbar() {
   return (
     <>
       {/* Fixed Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-8 flex items-center justify-between h-20">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white">
+        <div className="max-w-[1600px] mx-auto px-3 md:px-4 lg:px-6 flex items-center justify-between h-20">
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
@@ -52,14 +51,14 @@ export default function Navbar() {
                   <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0">
                     <div className="w-56 p-1.5 bg-white border border-gray-100 rounded-2xl shadow-xl">
                       <div className="flex flex-col gap-0.5">
-                        <Link href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors font-medium">
-                          General Physician Range
+                        <Link href="/products?tab=gynaec" className="px-4 py-2.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors font-medium">
+                          Gynaec Management
                         </Link>
-                        <Link href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors font-medium">
-                          Gynecology Range
+                        <Link href="/products?tab=ortho" className="px-4 py-2.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors font-medium">
+                          Ortho Management
                         </Link>
-                        <Link href="#" className="px-4 py-2.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors font-medium">
-                          Enterprise Solutions
+                        <Link href="/products?tab=physician" className="px-4 py-2.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors font-medium">
+                          Physician Management
                         </Link>
                       </div>
                     </div>

@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export default function FounderMessage() {
   return (
-    <section className="bg-[#f8f8f9] py-20 lg:py-28 px-6 md:px-12 lg:px-20 font-sans">
-      <div className="max-w-[1200px] mx-auto">
-        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
+    <section className="bg-white font-sans">
+      <div className="w-full max-w-[1600px] mx-auto px-3 md:px-4 lg:px-6 mb-8">
+        <div className="bg-[#f8f8f9] rounded-[2.5rem] rounded-tl-[0] rounded-tr-[0] py-16 lg:py-24 px-8 md:px-16 lg:px-24">
+          <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 xl:gap-24 items-center">
           
           {/* Left — Photo with smooth zoom effect */}
-          <div className="relative rounded-[32px] overflow-hidden h-[540px] lg:h-[620px] group shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] bg-black">
+          <div className="relative rounded-[2.5rem] overflow-hidden h-[400px] lg:h-[480px] xl:h-[560px] group shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] bg-black">
             <Image
               src="https://cjlpsqzjtchvpckpyllb.supabase.co/storage/v1/object/public/sentia/logo.png"
               alt="Founder of Adshine Pharmaceuticals"
@@ -37,33 +38,36 @@ export default function FounderMessage() {
               </span>
             </div>
 
-            <blockquote className="text-[#1a1a1a] text-[24px] lg:text-[28px] xl:text-[32px] leading-[1.45] font-medium tracking-tight mb-8 pr-4">
+            <blockquote className="text-[#1a1a1a] text-[20px] lg:text-[24px] xl:text-[28px] leading-[1.45] font-medium tracking-tight mb-6 pr-4">
               Our commitment is simple — to put clinically proven, GMP-certified medicine
               in the hands of every doctor and patient who needs it. We are not just building
               products; we are building trust.
             </blockquote>
 
-            <p className="text-[#888888] font-light leading-[1.6] mb-10 text-[15px] lg:text-[16px]">
+            <p className="text-[#888888] font-light leading-[1.6] mb-10 text-[15px] lg:text-[16px] max-w-2xl">
               Science drives us, but the belief that every life deserves better healthcare is
               what keeps us moving forward — one prescription at a time.
             </p>
 
             <div className="w-full h-[1px] bg-[#eaeaec] mb-10" />
 
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-4">
               {[
                 "Physician trust and prescription confidence",
                 "Transparent composition — no compromises on purity",
                 "Pan-India reach across 500+ healthcare professionals",
               ].map((point, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <span className="w-[6px] h-[6px] rounded-full bg-[#B80004] flex-shrink-0 mt-[8px]" />
-                  <p className="text-[14px] lg:text-[15px] text-[#666666] font-medium leading-snug">{point}</p>
+                <div key={i} className="flex items-center gap-4">
+                  <div className="flex items-center justify-center w-7 h-7 rounded-full bg-[#B80004]/10 shrink-0">
+                    <span className="w-[6px] h-[6px] rounded-full bg-[#B80004]" />
+                  </div>
+                  <p className="text-[14px] lg:text-[15px] text-[#555] font-medium leading-snug">{point}</p>
                 </div>
               ))}
             </div>
 
           </div>
+        </div>
         </div>
       </div>
     </section>

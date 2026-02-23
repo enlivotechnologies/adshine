@@ -1,102 +1,90 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 
 const divisions = [
   {
-    title: "Ortho Management",
-    subtitle: "ORTHO Division",
-    description:
-      "Precision-formulated solutions for bone strength, joint health, and calcium metabolism — built to support musculoskeletal wellness at every age.",
-    products: ["Calnine-XT", "Calnine", "Coral-D3", "Fernine-XT", "Pro-27 DF"],
-    image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=2670&auto=format&fit=crop", // Elegant active/wellness lifestyle image
-    linkText: "Explore Ortho Products",
-  },
-  {
-    title: "Gynecology",
-    subtitle: "GYN Division",
+    title: "Gynaec Management",
+    subtitle: "GYNAEC DIVISION",
     description:
       "Science-driven formulations for every stage of a woman's journey — from PCOS and fertility to prenatal care and menopause.",
-    products: ["Dydroflow", "Myonine-DM", "Adfol-DHA", "Shine-35", "RG-Nine", "Isopause"],
     image:
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2680&auto=format&fit=crop",
-    linkText: "Explore GYN Products",
+      "https://bqzsevmettslsygautrm.supabase.co/storage/v1/object/public/adshine/Gynaec%20Management.jpg",
+  },
+  {
+    title: "Ortho Management",
+    subtitle: "ORTHO DIVISION",
+    description:
+      "Precision-formulated solutions for bone strength, joint health, and calcium metabolism — built to support musculoskeletal wellness at every age.",
+    image:
+      "https://bqzsevmettslsygautrm.supabase.co/storage/v1/object/public/adshine/ortho-management.avif",
+  },
+  {
+    title: "Physician Management",
+    subtitle: "PHYSICIAN DIVISION",
+    description:
+      "Comprehensive healthcare solutions designed for general physicians to treat a wide array of everyday illnesses and conditions.",
+    image:
+      "https://bqzsevmettslsygautrm.supabase.co/storage/v1/object/public/adshine/Physician%20Management.jpg",
   },
 ];
 
 export default function ProductDivisions() {
   return (
-    <section className="bg-white py-20 lg:py-32 px-6 md:px-12 lg:px-20 font-sans">
-      <div className="max-w-[1200px] mx-auto">
-        {/* Header Section */}
-        <div className="flex flex-col mb-16 lg:mb-24">
-          <p className="text-[13px] font-medium text-[#888888] flex items-center tracking-wide mb-4 lg:mb-6">
-            <span className="text-[18px] mr-3 leading-none relative -top-[1.5px] text-[#b5b5b5]">•</span>
-            Our Divisions
-          </p>
-          <h2 className="text-[#1a1a1a] text-[32px] md:text-[36px] lg:text-[42px] xl:text-[48px] leading-[1.3] font-medium tracking-tight max-w-2xl">
-            Specialized Care Across Two Divisions
-          </h2>
-        </div>
+    <section className="bg-white font-sans">
+      <div className="w-full max-w-[1600px] mx-auto px-3 md:px-4 lg:px-6 mb-20">
+        <div className="bg-gradient-to-br from-[#E4F1EB] to-[#F1F8F4] rounded-[2.5rem] py-16 lg:py-24 px-8 md:px-16 lg:px-24">
+          {/* Header Section */}
+          <div className="flex flex-col mb-16 lg:mb-20">
+            <p className="text-[16px] lg:text-[18px] font-medium text-[#1A7753] flex items-center tracking-wide mb-4 lg:mb-6">
+              <span className="text-[18px] mr-3 leading-none relative -top-[1.5px] text-[#1A7753]/40">•</span>
+              Our Divisions
+            </p>
+            <h2 className="text-[#093020] text-[30px] lg:text-[36px] xl:text-[46px] leading-[1.45] font-medium tracking-tight max-w-3xl">
+              Specialized Care Across Our Divisions
+            </h2>
+          </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {divisions.map((division, index) => (
-            <div
-              key={index}
-              className="relative h-[500px] lg:h-[600px] rounded-[32px] overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] cursor-pointer"
-            >
-              {/* Background Image */}
-              <Image
-                src={division.image}
-                alt={division.title}
-                fill
-                className="object-cover"
-              />
-              {/* Static Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10 opacity-90" />
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 xl:gap-8">
+            {divisions.map((division, index) => (
+              <div
+                key={index}
+                className="relative h-[450px] lg:h-[500px] xl:h-[560px] rounded-xl overflow-hidden "
+              >
+                {/* Background Image */}
+                <Image
+                  src={division.image}
+                  alt={division.title}
+                  fill
+                  unoptimized={division.image.includes('supabase.co')}
+                  className="object-cover"
+                />
+                {/* Static Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10 opacity-90 group-hover:opacity-80 transition-opacity duration-700" />
 
-              {/* Content Wrapper */}
-              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end z-10">
-                <div>
-                  {/* Category Subtitle */}
-                  <p className="text-white/70 text-[11px] font-semibold uppercase tracking-[0.25em] mb-3">
-                    {division.subtitle}
-                  </p>
+                {/* Content Wrapper */}
+                <div className="absolute inset-0 p-8 lg:p-8 xl:p-10 flex flex-col justify-end z-10 transition-transform duration-500 ease-out group-hover:translate-y-[-8px]">
+                  <div>
+                    {/* Category Subtitle */}
+                    <p className="text-white/70 text-[12px] lg:text-[13px] font-semibold uppercase tracking-[0.25em] mb-4">
+                      {division.subtitle}
+                    </p>
 
-                  {/* Title */}
-                  <h3 className="text-[28px] lg:text-[34px] font-medium text-white mb-4 tracking-tight leading-short drop-shadow-md">
-                    {division.title}
-                  </h3>
+                    {/* Title */}
+                    <h3 className="text-[20px] lg:text-[24px] xl:text-[28px] leading-[1.45] font-medium text-white mb-5 tracking-tight leading-[1.15] drop-shadow-md">
+                      {division.title}
+                    </h3>
 
-                  {/* Description */}
-                  <p className="text-white/80 text-[14px] lg:text-[15px] leading-[1.6] mb-8 font-light max-w-[95%]">
-                    {division.description}
-                  </p>
-
-                  {/* Premium Pill Tags */}
-                  <div className="flex flex-wrap gap-2 mb-8">
-                    {division.products.map((p) => (
-                      <span
-                        key={p}
-                        className="text-[12px] font-medium text-white/90 bg-white/10 backdrop-blur-md border border-white/20 px-3.5 py-1.5 rounded-full"
-                      >
-                        {p}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* CTA */}
-                  <div className="flex items-center gap-2 text-white text-[14px] font-semibold uppercase tracking-wide">
-                    {division.linkText}
-                    <ArrowRight className="w-4 h-4 ml-0.5" />
+                    {/* Description */}
+                    <p className="text-white/80 text-[12px] lg:text-[14px] xl:text-[16px] leading-[1.6] mb-0 font-light max-w-[95%]">
+                      {division.description}
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
