@@ -97,7 +97,7 @@ export default function Navbar() {
           {/* Auth/CTA Buttons */}
           <div className="hidden md:flex items-center gap-4 flex-shrink-0">
             <Link 
-              href="mailto:info@adshinepharma.com" 
+              href="mailto:adshinepharamaceutical@gmail.com" 
               className={`group flex items-center gap-2 h-[44px] px-6 rounded-full font-semibold transition-all duration-300 ${
                 isTransparent 
                   ? 'bg-blue-500 text-white' 
@@ -141,7 +141,7 @@ export default function Navbar() {
             ))}
             <div className="flex flex-col mt-8">
               <Link 
-                href="mailto:info@adshinepharma.com" 
+                href="mailto:adshinepharamaceutical@gmail.com" 
                 className="flex items-center justify-center w-full h-14 rounded-full bg-[#B80004] text-white font-bold text-lg hover:bg-[#0047B3] transition-colors shadow-xl shadow-red-500/20"
               >
                 Quick Enquiry
