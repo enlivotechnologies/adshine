@@ -219,7 +219,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-6">
             {[
               { icon: Leaf, title: "100K+", text: "Patients Reached", desc: "Delivering vital therapeutic care across all demographics." },
-              { icon: Activity, title: "20+", text: "Therapeutic Segments", desc: "A diverse and highly reliable therapeutic portfolio." },
+              { icon: Activity, title: "5+", text: "Therapeutic Segments", desc: "A diverse and highly reliable therapeutic portfolio." },
               { icon: Globe, title: "100%", text: "Quality Compliance", desc: "Every batch is rigorously tested and documented." },
               { icon: Users, title: "500+", text: "Medical Partners", desc: "Trusted by top specialist doctors across India." },
               { icon: ShieldCheck, title: "15+", text: "Years Legacy", desc: "A steadfast commitment to better healthcare outcomes." }

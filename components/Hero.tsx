@@ -88,7 +88,7 @@ export default function Hero() {
           
           {/* Card 2: Orthology */}
           <Link href="/products?tab=ortho" className="relative h-[280px] rounded-[1.5rem] overflow-hidden group block shadow-md">
-            <Image src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=800" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" alt="Ortho Management" />
+            <Image src="https://bqzsevmettslsygautrm.supabase.co/storage/v1/object/public/adshine/ortho.avif" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" alt="Ortho Management" unoptimized />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A1931]/95 via-[#0A1931]/40 to-transparent"></div>
             <div className="absolute top-5 right-5 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/20 transition-all group-hover:bg-blue-600 group-hover:border-blue-600 shadow-sm cursor-pointer">
               <ArrowUpRight className="w-5 h-5" />
