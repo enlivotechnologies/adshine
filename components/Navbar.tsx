@@ -28,8 +28,8 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Products", href: "/products", hasDropdown: true },
     { name: "About Us", href: "/about" },
-    { name: "Careers", href: "/careers" },
-    { name: "Contact", href: "/contact" },
+    { name: "Careers", href: "https://wa.me/919876543210", isExternal: true },
+    { name: "Contact", href: "https://wa.me/919876543210", isExternal: true },
   ];
 
   const isTransparent = isHome && !scrolled;
@@ -61,6 +61,8 @@ export default function Navbar() {
               <div key={link.name} className="relative group">
                 <Link
                   href={link.href}
+                  target={link.isExternal ? "_blank" : undefined}
+                  rel={link.isExternal ? "noopener noreferrer" : undefined}
                   className={`flex items-center gap-1.5 text-[14px] font-medium transition-colors border-b border-transparent ${
                     isTransparent 
                       ? 'text-white/80 hover:text-white' 
@@ -95,7 +97,7 @@ export default function Navbar() {
           {/* Auth/CTA Buttons */}
           <div className="hidden md:flex items-center gap-4 flex-shrink-0">
             <Link 
-              href="/contact" 
+              href="mailto:info@adshinepharma.com" 
               className={`group flex items-center gap-2 h-[44px] px-6 rounded-full font-semibold transition-all duration-300 ${
                 isTransparent 
                   ? 'bg-blue-500 text-white' 
@@ -128,6 +130,8 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
+                target={link.isExternal ? "_blank" : undefined}
+                rel={link.isExternal ? "noopener noreferrer" : undefined}
                 className="flex items-center justify-between px-4 py-4 text-lg font-semibold text-gray-800 hover:text-[#0057D9] hover:bg-blue-50 rounded-2xl transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -136,7 +140,10 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="flex flex-col mt-8">
-              <Link href="/contact" className="flex items-center justify-center w-full h-14 rounded-full bg-[#B80004] text-white font-bold text-lg hover:bg-[#0047B3] transition-colors shadow-xl shadow-red-500/20">
+              <Link 
+                href="mailto:info@adshinepharma.com" 
+                className="flex items-center justify-center w-full h-14 rounded-full bg-[#B80004] text-white font-bold text-lg hover:bg-[#0047B3] transition-colors shadow-xl shadow-red-500/20"
+              >
                 Quick Enquiry
               </Link>
             </div>

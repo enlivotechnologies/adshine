@@ -22,7 +22,7 @@ export default function AboutPage() {
       {/* ── HERO ── */}
       <section className="relative bg-white pt-24 lg:pt-32 pb-12 w-full">
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 lg:px-12 text-center">
-          <div className="inline-flex items-center gap-3 mb-6 w-fit border border-blue-100 bg-white px-5 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow">
+          <div className="inline-flex items-center gap-3 mb-6 w-fit border border-blue-100 bg-white px-5 py-2 rounded-full shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-[#0057D9]"></span>
             <span className="text-[#0057D9] font-medium tracking-[0.15em] uppercase text-[10px] lg:text-[11px]">
              Adshine Pharmaceuticals
@@ -43,7 +43,7 @@ export default function AboutPage() {
         <div className="w-full max-w-[1600px] mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             {stats.map((stat, i) => (
-              <div key={i} className="bg-white rounded-[2rem] p-8 lg:p-12 flex flex-col items-center justify-center text-center border border-[#E2E8F0] shadow-lg shadow-blue-500/5 hover:-translate-y-1 transition-transform duration-300">
+              <div key={i} className="bg-white rounded-[2rem] p-8 lg:p-12 flex flex-col items-center justify-center text-center border border-[#E2E8F0] shadow-lg shadow-blue-500/5">
                 <p className="text-[36px] lg:text-[46px] font-medium text-[#0A1931] mb-2 leading-none drop-shadow-sm">{stat.value}</p>
                 <p className="text-[11px] lg:text-[12px] text-slate-500 font-bold uppercase tracking-[0.2em]">{stat.label}</p>
               </div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Founder Snippet */}
-                <div className="mt-12 p-6 md:p-8 bg-white rounded-[2rem] border border-blue-100 shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 hover:shadow-md transition-shadow">
+                <div className="mt-12 p-6 md:p-8 bg-white rounded-[2rem] border border-blue-100 shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6">
                   <div className="relative w-20 h-20 rounded-[1.25rem] overflow-hidden bg-[#F4F7FB] shrink-0 border border-blue-50 flex items-center justify-center">
                     <Image 
                       src="https://cjlpsqzjtchvpckpyllb.supabase.co/storage/v1/object/public/sentia/medicine.png" 
@@ -100,13 +100,13 @@ export default function AboutPage() {
 
               {/* Right Image */}
               <div className="lg:col-span-6">
-                <div className="relative h-[500px] lg:h-[700px] w-full rounded-[2.5rem] overflow-hidden border border-blue-100 bg-slate-100 shadow-xl shadow-blue-900/5 group">
+                <div className="relative h-[500px] lg:h-[700px] w-full rounded-[2.5rem] overflow-hidden border border-blue-100 bg-slate-100 shadow-xl shadow-blue-900/5">
                   <Image 
                     src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop" 
                     alt="Our Facility" 
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1931]/40 to-transparent pointer-events-none mix-blend-multiply" />
                 </div>
@@ -136,9 +136,9 @@ export default function AboutPage() {
               { icon: ShieldCheck, title: "GMP Manufacturing", desc: "Producing zero-defect batches in our state-of-the-art, WHO-GMP compliant facilities using premium active ingredients." },
               { icon: Globe, title: "Pan-India Distribution", desc: "Ensuring timely, temperature-controlled delivery of vital medicines to hospitals, clinics, and pharmacies nationwide." },
             ].map((item, i) => (
-              <div key={i} className="bg-white p-10 lg:p-12 rounded-[2.5rem] border border-[#E2E8F0] shadow-sm hover:shadow-xl hover:shadow-blue-500/5 hover:border-blue-100 transition-all duration-300 group">
-                <div className="w-[60px] h-[60px] rounded-[1.25rem] bg-blue-50 group-hover:bg-[#0057D9] transition-colors duration-300 border border-blue-100 flex items-center justify-center mb-8 shadow-sm">
-                  <item.icon className="w-7 h-7 text-[#0057D9] group-hover:text-white transition-colors duration-300" />
+              <div key={i} className="bg-white p-10 lg:p-12 rounded-[2.5rem] border border-[#E2E8F0] shadow-sm">
+                <div className="w-[60px] h-[60px] rounded-[1.25rem] bg-blue-50 border border-blue-100 flex items-center justify-center mb-8 shadow-sm">
+                  <item.icon className="w-7 h-7 text-[#0057D9]" />
                 </div>
                 <h3 className="text-[20px] lg:text-[22px] font-bold text-[#0A1931] mb-4">{item.title}</h3>
                 <p className="text-[14px] lg:text-[15px] text-slate-600 font-medium leading-relaxed">{item.desc}</p>
@@ -157,30 +157,30 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
               {/* Left Text */}
               <div>
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 border border-white/20 mb-8 backdrop-blur-sm">
-                  <Target className="w-8 h-8 text-sky-400" />
+                <div className="inline-flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-white/10 border border-white/20 mb-6 backdrop-blur-sm shadow-sm">
+                  <Target className="w-6 h-6 text-sky-400" />
                 </div>
-                <h2 className="text-[32px] md:text-[42px] lg:text-[48px] font-medium text-white tracking-tight mb-8 leading-[1.1]">
+                <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-medium text-white tracking-tight mb-6 leading-[1.1]">
                   Our Approach to <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-300">Modern Healthcare.</span>
                 </h2>
-                <p className="text-[15px] lg:text-[16px] text-blue-100/80 font-medium leading-relaxed mb-12 max-w-lg">
+                <p className="text-[14px] lg:text-[15px] text-blue-100/80 font-medium leading-[1.6] mb-10 max-w-md">
                   We don't just manufacture pills; we engineer trust. Our methodology relies on absolute transparency and clinical validity from the lab to the prescription pad.
                 </p>
                 
-                <div className="space-y-8">
+                <div className="space-y-6">
                   {[
                     { title: "Doctor-Centric Design", text: "Formulations tailored to address specific therapeutic challenges faced by practitioners." },
                     { title: "Uncompromising Sourcing", text: "We utilize only USP/IP grade raw materials from globally certified vendors." },
                     { title: "Continuous Refinement", text: "Post-market surveillance and continuous R&D to improve absorption and efficacy." }
                   ].map((pt, i) => (
-                    <div key={i} className="flex gap-5 items-start">
-                      <div className="w-8 h-8 rounded-full bg-sky-400/20 border border-sky-400/40 flex items-center justify-center shrink-0 mt-1 shadow-inner">
-                        <CheckCircle2 className="w-4 h-4 text-sky-400" />
+                    <div key={i} className="flex gap-4 items-start">
+                      <div className="w-6 h-6 rounded-full bg-sky-400/20 border border-sky-400/40 flex items-center justify-center shrink-0 mt-0.5 shadow-inner">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-sky-400" strokeWidth={2.5} />
                       </div>
                       <div>
-                        <h4 className="text-[16px] xl:text-[17px] font-bold text-white mb-2">{pt.title}</h4>
-                        <p className="text-[14px] lg:text-[15px] text-blue-100/70 font-medium leading-relaxed max-w-md">{pt.text}</p>
+                        <h4 className="text-[15px] xl:text-[16px] font-bold text-white mb-1.5">{pt.title}</h4>
+                        <p className="text-[13px] lg:text-[14px] text-blue-100/70 font-medium leading-[1.6] max-w-[400px]">{pt.text}</p>
                       </div>
                     </div>
                   ))}
@@ -188,27 +188,9 @@ export default function AboutPage() {
               </div>
 
               {/* Right Images */}
-              <div className="grid grid-cols-2 gap-4 lg:gap-6 h-full">
-                <div className="space-y-4 lg:space-y-6 pt-12">
-                  <div className="relative h-[200px] lg:h-[280px] w-full bg-[#1e3a8a]/50 rounded-[2rem] overflow-hidden border border-white/10 shadow-lg group">
-                     <Image src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=2000&auto=format&fit=crop" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-110" alt="Lab" />
-                     <div className="absolute inset-0 bg-[#0A1931]/20 group-hover:bg-transparent transition-colors duration-500" />
-                  </div>
-                  <div className="relative h-[280px] lg:h-[360px] w-full bg-[#1e3a8a]/50 rounded-[2rem] overflow-hidden border border-white/10 shadow-lg group">
-                     <Image src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=2000&auto=format&fit=crop" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-110" alt="Factory" />
-                     <div className="absolute inset-0 bg-[#0A1931]/20 group-hover:bg-transparent transition-colors duration-500" />
-                  </div>
-                </div>
-                <div className="space-y-4 lg:space-y-6">
-                  <div className="relative h-[280px] lg:h-[360px] w-full bg-[#1e3a8a]/50 rounded-[2rem] overflow-hidden border border-white/10 shadow-lg group">
-                     <Image src="https://images.unsplash.com/photo-1576091160550-2173ff9e5ee5?q=80&w=2000&auto=format&fit=crop" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-110" alt="Research" />
-                     <div className="absolute inset-0 bg-[#0A1931]/20 group-hover:bg-transparent transition-colors duration-500" />
-                  </div>
-                  <div className="relative h-[200px] lg:h-[280px] w-full bg-[#1e3a8a]/50 rounded-[2rem] overflow-hidden border border-white/10 shadow-lg group">
-                     <Image src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=2000&auto=format&fit=crop" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-110" alt="Medicine" />
-                     <div className="absolute inset-0 bg-[#0A1931]/20 group-hover:bg-transparent transition-colors duration-500" />
-                  </div>
-                </div>
+              <div className="h-full w-full relative min-h-[400px] lg:min-h-[550px] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
+                 <Image src="https://bqzsevmettslsygautrm.supabase.co/storage/v1/object/public/adshine/PHOTO-2026-02-24-13-40-16.jpg" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" alt="Our Approach" unoptimized />
+                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1931]/60 via-transparent to-transparent pointer-events-none" />
               </div>
 
             </div>
@@ -236,13 +218,13 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-6">
             {[
-              { icon: Leaf, title: "100K+", text: "Patients Reached", desc: "Delivering vital therapeutic care across urban and rural demographics." },
-              { icon: Activity, title: "20+", text: "Therapeutic Segments", desc: "From gynecology to orthopedics, a diverse and reliable portfolio." },
-              { icon: Globe, title: "100%", text: "Quality Compliance", desc: "Every single batch is tested, validated, and precisely documented." },
-              { icon: Users, title: "500+", text: "Medical Partners", desc: "Trusted by top hospitals and specialist doctors across India." },
-              { icon: ShieldCheck, title: "15+", text: "Years Legacy", desc: "Over a decade of unwavering commitment to healthcare outcomes." }
+              { icon: Leaf, title: "100K+", text: "Patients Reached", desc: "Delivering vital therapeutic care across all demographics." },
+              { icon: Activity, title: "20+", text: "Therapeutic Segments", desc: "A diverse and highly reliable therapeutic portfolio." },
+              { icon: Globe, title: "100%", text: "Quality Compliance", desc: "Every batch is rigorously tested and documented." },
+              { icon: Users, title: "500+", text: "Medical Partners", desc: "Trusted by top specialist doctors across India." },
+              { icon: ShieldCheck, title: "15+", text: "Years Legacy", desc: "A steadfast commitment to better healthcare outcomes." }
             ].map((stat, i) => (
-              <div key={i} className="bg-white rounded-[1.5rem] p-7 lg:p-8 border border-slate-200/80 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,50,200,0.04)] hover:-translate-y-0.5 transition-all duration-500 flex flex-col justify-between min-h-[280px]">
+              <div key={i} className="bg-white rounded-[1.5rem] p-7 lg:p-8 border border-slate-200/80 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex flex-col justify-between min-h-[280px]">
                 <div className="w-[46px] h-[46px] rounded-[14px] bg-[#F4F7FB] border border-blue-100/60 flex items-center justify-center mb-10 shrink-0">
                   <stat.icon className="w-[22px] h-[22px] text-[#0057D9]" strokeWidth={1.5} />
                 </div>

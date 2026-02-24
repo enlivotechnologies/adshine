@@ -76,7 +76,7 @@ function ProductsContent() {
       <div className="max-w-7xl mx-auto px-8 py-14">
         {/* Page Header */}
         <div className="mb-12 pb-10 border-b border-gray-100">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Our Portfolio</p>
+          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Our Products</p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div>
               <h1 className="text-3xl md:text-4xl font-medium text-gray-900 tracking-tight leading-tight mb-3">

@@ -18,10 +18,15 @@ export default function CTAStrip() {
           </div>
 
           <div className="relative z-10 flex justify-center pt-4 lg:pt-6">
-            <button className="group h-[54px] lg:h-[60px] px-10 rounded-full bg-blue-500 text-white font-semibold text-[15px] lg:text-[16px] flex items-center gap-3 hover:bg-blue-600">
+            <a 
+              href="https://wa.me/919876543210" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="group h-[54px] lg:h-[60px] px-10 rounded-full bg-blue-500 text-white font-semibold text-[15px] lg:text-[16px] flex items-center gap-3 hover:bg-blue-600 transition-colors"
+            >
               Partner With Us
               <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -119,11 +119,6 @@ export default function Footer() {
 
       </div>
 
-      {/* WhatsApp Float */}
-      <button className="fixed bottom-6 right-6 z-50 p-4 bg-green-500 rounded-full text-white shadow-xl hover:scale-110 transition-transform hover:shadow-2xl active:scale-95">
-        <MessageCircle className="w-6 h-6" />
-      </button>
-
     </footer>
   );
 }

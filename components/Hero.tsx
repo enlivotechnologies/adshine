@@ -12,9 +12,10 @@ export default function Hero() {
         NEW FULLSCREEN HERO (Reference Image Vibe) 
         ========================================
       */}
-      <div className="relative w-full h-[100svh] min-h-[800px] bg-black overflow-hidden flex items-center">
+      <div className="relative w-full min-h-[100svh] md:h-[100svh] md:min-h-[800px] bg-black overflow-hidden flex items-center pt-20 md:pt-0">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
+          {/* Desktop Background Image */}
           <Image 
             src="https://i.pinimg.com/1200x/0b/02/8b/0b028b6fb9948e8ed4185b795271591a.jpg" 
             alt="Healthcare Background" 
@@ -22,7 +23,17 @@ export default function Hero() {
             quality={90}
             priority
             unoptimized
-            className="object-cover"
+            className="hidden md:block object-cover origin-center"
+          />
+          {/* Mobile Background Image */}
+          <Image 
+            src="https://i.pinimg.com/736x/a5/ae/ee/a5aeeeef0327dec960e718f629e0131c.jpg" 
+            alt="Healthcare Background Mobile" 
+            fill
+            quality={90}
+            priority
+            unoptimized
+            className="block md:hidden object-cover origin-center"
           />
           {/* Premium Black Overlay to make text readable */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
@@ -32,23 +43,23 @@ export default function Hero() {
 
         {/* Main Content Container */}
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 lg:px-12 h-full flex flex-col justify-center items-center text-center">
-          <div className="inline-flex items-center gap-3 mb-8 w-fit border border-white/20 bg-white/10 px-5 py-2.5 rounded-full backdrop-blur-md shadow-lg">
+          <div className="inline-flex items-center gap-3 mb-6 lg:mb-8 w-fit border border-white/20 bg-white/10 px-5 py-2.5 rounded-full backdrop-blur-md shadow-lg">
             <span className="w-2 h-2 rounded-full bg-[#0057D9] animate-pulse"></span>
-            <span className="text-white font-semibold tracking-widest drop-shadow-sm uppercase text-xs">
+            <span className="text-white font-semibold tracking-widest drop-shadow-sm uppercase text-[10px] sm:text-xs">
              Adshine Pharmaceuticals
             </span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-white tracking-tight mb-6 leading-[1.05] drop-shadow-md max-w-5xl mx-auto">
-            Healthier Lives Begins With <span className="text-transparent bg-clip-text bg-white">Better Medicine</span>
+          <h1 className="text-[40px] leading-[1.1] sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white tracking-tight mb-5 md:mb-6 drop-shadow-md max-w-5xl mx-auto">
+            Healthier Lives Begins With <br className="md:hidden" /><span className="text-transparent bg-clip-text bg-white">Better Medicine</span>
           </h1>
           
-          <p className="text-lg md:text-xl lg:text-2xl text-white/90 font-light max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow">
+          <p className="text-[15px] sm:text-lg md:text-xl lg:text-2xl text-white/90 font-light max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed drop-shadow px-4 md:px-0">
             Clinically proven, GMP-certified formulations trusted by specialists across India.
           </p>
           
           <div>
-            <Link href="/products" className="inline-block bg-blue-500 text-white px-10 py-4 rounded-full font-semibold text-[16px]">
+            <Link href="/products" className="inline-block bg-blue-500 hover:bg-blue-600 transition-colors text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold text-[15px] md:text-[16px] shadow-lg">
              Explore Products
             </Link>
           </div>
