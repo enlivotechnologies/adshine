@@ -13,6 +13,27 @@ export const metadata: Metadata = {
   title: "Adshine Pharmaceuticals | Creating Healthy Lives",
   description:
     "Adshine Pharmaceuticals delivers GMP-certified, science-backed medicines across General Physician and Gynecology specialties across India.",
+  keywords: ["Pharmaceuticals", "Adshine", "Adshine Pharmaceuticals", "GMP Certified", "Healthcare India", "Medicine", "Clinical Care", "Gynecology", "Orthopedics"],
+  openGraph: {
+    title: "Adshine Pharmaceuticals | Creating Healthy Lives",
+    description: "Adshine Pharmaceuticals delivers GMP-certified, science-backed medicines across India.",
+    url: "https://adshinepharma.com",
+    siteName: "Adshine Pharmaceuticals",
+    images: [
+      {
+        url: "/adshine-logo1.png",
+        width: 1200,
+        height: 630,
+        alt: "Adshine Pharmaceuticals Logo"
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  icons: {
+    icon: "/adshine-logo1.png",
+    apple: "/adshine-logo1.png",
+  },
 };
 
 export default function RootLayout({

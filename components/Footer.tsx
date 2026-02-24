@@ -16,9 +16,9 @@ export default function Footer() {
           {/* ── Brand ── */}
           <div className="space-y-6">
             <img
-              src="https://cjlpsqzjtchvpckpyllb.supabase.co/storage/v1/object/public/sentia/medicine.png"
+              src="/adshine-logo1.png"
               alt="Adshine Pharmaceuticals"
-              className="h-20 w-auto object-contain"
+              className="h-12 sm:h-16 w-auto object-contain"
             />
             <p className="text-gray-500 leading-relaxed max-w-xs">
               Creating Healthy Lives through science-backed pharmaceutical care — trusted by doctors across India.

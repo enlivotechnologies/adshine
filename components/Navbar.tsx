@@ -45,12 +45,12 @@ export default function Navbar() {
       >
         <div className={`max-w-[1600px] mx-auto px-6 lg:px-12 flex items-center justify-between transition-all duration-500 ${isTransparent ? 'h-24' : 'h-20'}`}>
           {/* Logo */}
-          <Link href="/" className="flex flex-shrink-0 items-center gap-2 group">
-            <div className={`relative overflow-hidden rounded-xl transition-all duration-500 ease-out group-hover:scale-105 ${isTransparent ? 'h-24 w-24' : 'h-16 w-16'}`}>
+          <Link href="/" className="flex flex-shrink-0 items-center gap-2">
+            <div className={`relative overflow-hidden transition-all duration-500 ease-out flex items-center ${isTransparent ? 'h-16 sm:h-20 lg:h-24' : 'h-12 sm:h-14 lg:h-16'}`}>
               <img
-                src="https://cjlpsqzjtchvpckpyllb.supabase.co/storage/v1/object/public/sentia/medicine.png"
-                alt="Adshine Logo"
-                className="h-full w-full object-contain"
+                src="/adshine-logo1.png"
+                alt="Adshine Pharmaceuticals Logo"
+                className="h-full w-auto object-contain py-1"
               />
             </div>
           </Link>
