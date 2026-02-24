@@ -17,7 +17,7 @@ const divisions = [
     description:
       "Precision-formulated solutions for bone strength, joint health, and calcium metabolism — built to support musculoskeletal wellness at every age.",
     image:
-      "https://bqzsevmettslsygautrm.supabase.co/storage/v1/object/public/adshine/ortho-management.avif",
+      "https://bqzsevmettslsygautrm.supabase.co/storage/v1/object/public/adshine/Ortho%20Management.avif",
   },
   {
     title: "Physician Management",
@@ -33,14 +33,14 @@ export default function ProductDivisions() {
   return (
     <section className="bg-white font-sans">
       <div className="w-full max-w-[1600px] mx-auto px-3 md:px-4 lg:px-6 mb-20">
-        <div className="bg-gradient-to-br from-[#E4F1EB] to-[#F1F8F4] rounded-[2.5rem] py-16 lg:py-24 px-8 md:px-16 lg:px-24">
+        <div className="bg-gradient-to-br from-[#E0F2FE] to-[#F0F9FF] rounded-[2.5rem] py-16 lg:py-24 px-8 md:px-16 lg:px-24 border border-blue-50/50 shadow-sm">
           {/* Header Section */}
           <div className="flex flex-col mb-16 lg:mb-20">
-            <p className="text-[16px] lg:text-[18px] font-medium text-[#1A7753] flex items-center tracking-wide mb-4 lg:mb-6">
-              <span className="text-[18px] mr-3 leading-none relative -top-[1.5px] text-[#1A7753]/40">•</span>
+            <p className="text-[16px] lg:text-[18px] font-medium text-[#0284C7] flex items-center tracking-wide mb-4 lg:mb-6">
+              <span className="text-[18px] mr-3 leading-none relative -top-[1.5px] text-[#0284C7]/40">•</span>
               Our Divisions
             </p>
-            <h2 className="text-[#093020] text-[30px] lg:text-[36px] xl:text-[46px] leading-[1.45] font-medium tracking-tight max-w-3xl">
+            <h2 className="text-[#0A1931] text-[30px] lg:text-[36px] xl:text-[46px] leading-[1.45] font-medium tracking-tight max-w-3xl">
               Specialized Care Across Our Divisions
             </h2>
           </div>
@@ -57,11 +57,14 @@ export default function ProductDivisions() {
                   src={division.image}
                   alt={division.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={85}
+                  priority={index < 2} // Load first two immediately to prevent layout shift below fold
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                   unoptimized={division.image.includes('supabase.co')}
-                  className="object-cover"
                 />
                 {/* Static Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10 opacity-90 group-hover:opacity-80 transition-opacity duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1931]/95 via-[#0A1931]/40 to-black/10 opacity-90 group-hover:opacity-80 transition-opacity duration-700 hover:opacity-80" />
 
                 {/* Content Wrapper */}
                 <div className="absolute inset-0 p-8 lg:p-8 xl:p-10 flex flex-col justify-end z-10 transition-transform duration-500 ease-out group-hover:translate-y-[-8px]">

@@ -16,7 +16,7 @@ type Product = {
 const gynaecProducts: Product[] = [
   { id: 1, name: "Dydroflow", form: "Tablets", division: "gynaec", indication: "Threatened Abortion, Recurrent Pregnancy Loss" },
   { id: 2, name: "Lactojoy", form: "Veg Capsules", division: "gynaec", indication: "Bacterial Vaginosis, UTI, PCOS" },
-  { id: 3, name: "Shine 35", form: "Tablets", division: "gynaec", indication: "PCOS, Hirsutism, Acne" },
+  { id: 3, name: "Shine 35", form: "Tablets", division: "gynaec", indication: "PCOS, Hirsutism, Acne"},
   { id: 4, name: "Pro27", form: "Supplement", division: "gynaec", indication: "Protein Deficiency in Pregnancy & Lactation" },
   { id: 5, name: "Adfol DHA", form: "Tablets", division: "gynaec", indication: "Pregnancy Nutrition, Neural Tube Defect Prevention" },
   { id: 6, name: "RG nine", form: "Sachets", division: "gynaec", indication: "Recurrent Pregnancy Loss, Foetal Growth" },

@@ -59,13 +59,12 @@ export default function Footer() {
               <div>
                 <p className="font-semibold text-gray-900 mb-3 text-[13px]">General Physician</p>
                 <ul className="space-y-2.5 text-gray-500">
-                  <li>Bone Health</li>
                   <li>Gut &amp; Immunity</li>
                   <li>Iron &amp; Blood</li>
                 </ul>
               </div>
               <div>
-                <p className="font-semibold text-gray-900 mb-3 text-[13px]">Gynecology</p>
+                <p className="font-semibold text-gray-900 mb-3 text-[13px]">Infertility Care</p>
                 <ul className="space-y-2.5 text-gray-500">
                   <li>Pregnancy Care</li>
                   <li>PCOS Management</li>
