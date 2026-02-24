@@ -5,7 +5,7 @@ import Image from "next/image";
 const divisions = [
   {
     title: "Gynaec Management",
-    subtitle: "GYNAEC DIVISION",
+    subtitle: "GYNAEC MANAGEMENT",
     description:
       "Science-driven formulations for every stage of a woman's journey — from PCOS and fertility to prenatal care and menopause.",
     image:
@@ -13,7 +13,7 @@ const divisions = [
   },
   {
     title: "Ortho Management",
-    subtitle: "ORTHO DIVISION",
+    subtitle: "ORTHO MANAGEMENT",
     description:
       "Precision-formulated solutions for bone strength, joint health, and calcium metabolism — built to support musculoskeletal wellness at every age.",
     image:
@@ -21,7 +21,7 @@ const divisions = [
   },
   {
     title: "Physician Management",
-    subtitle: "PHYSICIAN DIVISION",
+    subtitle: "PHYSICIAN MANAGEMENT",
     description:
       "Comprehensive healthcare solutions designed for general physicians to treat a wide array of everyday illnesses and conditions.",
     image:

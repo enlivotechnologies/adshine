@@ -46,13 +46,13 @@ export default function Navbar() {
         <div className={`max-w-[1600px] mx-auto px-6 lg:px-12 flex items-center justify-between transition-all duration-500 ${isTransparent ? 'h-24' : 'h-20'}`}>
           {/* Logo */}
           <Link href="/" className="flex flex-shrink-0 items-center gap-2">
-            <div className={`relative overflow-hidden transition-all duration-500 ease-out flex items-center ${isTransparent ? 'h-16 sm:h-20 lg:h-24' : 'h-12 sm:h-14 lg:h-16'}`}>
-              <img
-                src="/adshine-logo1.png"
-                alt="Adshine Pharmaceuticals Logo"
-                className="h-full w-auto object-contain py-1"
-              />
-            </div>
+            <div className={`relative overflow-hidden transition-all duration-500 ease-out flex items-center ${isTransparent ? 'h-20 sm:h-24 lg:h-28' : 'h-16 sm:h-20 lg:h-24'}`}>
+                <img
+                  src="/logo adshine.jpeg"
+                  alt="Adshine Pharmaceuticals Logo"
+                  className="h-full w-auto object-contain py-1"
+                />
+              </div>
           </Link>
 
           {/* Desktop Navigation */}

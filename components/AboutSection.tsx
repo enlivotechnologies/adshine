@@ -31,7 +31,7 @@ export default function AboutSection() {
           </div>
           <div className="lg:col-span-3 lg:pr-12">
             <h2 className="text-[#0A1931] text-[20px] lg:text-[24px] xl:text-[28px] leading-[1.45] font-medium tracking-tight">
-              With over 15 years of pharmaceutical experience, we specialise in delivering science-backed, GMP-certified medicines across General Physician and Gynecology care. Our dedicated team is focused on improving patient outcomes and helping doctors across India prescribe with confidence.
+              With over 15 years of pharmaceutical experience, we specialise in delivering science-backed, GMP-certified medicines across General Physician, Ortho and Gynecology care. Our dedicated team is focused on improving patient outcomes and helping doctors across India prescribe with confidence.
             </h2>
           </div>
         </div>

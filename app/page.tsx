@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import StatsCounter from "@/components/StatsCounter";
 import AboutSection from "@/components/AboutSection";
 import ProductDivisions from "@/components/ProductDivisions";
-import FeaturedProducts from "@/components/FeaturedProducts";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import QualitySection from "@/components/QualitySection";
 import CTAStrip from "@/components/CTAStrip";
@@ -23,7 +22,6 @@ export default function Home() {
         <AboutSection />
         <FounderMessage />
         <ProductDivisions />
-        <FeaturedProducts />
         <WhyChooseUs />
         {/* <QualitySection /> */}
         <CTAStrip />

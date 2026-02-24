@@ -16,7 +16,7 @@ export default function Footer() {
           {/* ── Brand ── */}
           <div className="space-y-6">
             <img
-              src="/adshine-logo1.png"
+              src="/logo adshine.jpeg"
               alt="Adshine Pharmaceuticals"
               className="h-12 sm:h-16 w-auto object-contain"
             />
