@@ -131,7 +131,7 @@ export default function Hero() {
               <ArrowUpRight className="w-5 h-5" />
             </div>
             <div className="absolute bottom-6 left-6 right-6">
-              <h3 className="text-white font-bold text-2xl leading-tight mb-1">Physician Division-Management</h3>
+              <h3 className="text-white font-bold text-2xl leading-tight mb-1">Physician </h3>
               <p className="text-white/80 font-medium text-sm leading-snug">Comprehensive family nutrition</p>
             </div>
           </Link>
