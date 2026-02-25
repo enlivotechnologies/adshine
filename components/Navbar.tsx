@@ -43,16 +43,19 @@ export default function Navbar() {
             : "bg-white/95 backdrop-blur-md  py-0"
         }`}
       >
-        <div className={`max-w-[1600px] mx-auto px-6 lg:px-12 flex items-center justify-between transition-all duration-500 ${isTransparent ? 'h-24' : 'h-20'}`}>
+        <div className={`max-w-[1600px] mx-auto px-6 lg:px-12 flex items-center justify-between transition-all duration-500 ${isTransparent ? 'h-40 sm:h-44 lg:h-52' : 'h-24 sm:h-28 lg:h-36'}`}>
           {/* Logo */}
           <Link href="/" className="flex flex-shrink-0 items-center gap-2">
-            <div className={`relative overflow-hidden transition-all duration-500 ease-out flex items-center ${isTransparent ? 'h-20 sm:h-24 lg:h-28' : 'h-16 sm:h-20 lg:h-24'}`}>
+            <div className="flex flex-col items-center gap-0.5">
+              <div className={`relative overflow-hidden transition-all duration-500 ease-out flex items-center ${isTransparent ? 'h-28 sm:h-32 lg:h-40' : 'h-20 sm:h-24 lg:h-32'}`}>
                 <img
-                  src="/logo adshine.jpeg"
+                  src="/logo%20adshine.jpeg"
                   alt="Adshine Pharmaceuticals Logo"
                   className="h-full w-auto object-contain py-1"
                 />
               </div>
+            
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
