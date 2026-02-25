@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Adshine Pharmaceuticals",
     images: [
       {
-        url: "/adshine-logo1.png",
+        url: "/logo adshine.jpeg",
         width: 1200,
         height: 630,
         alt: "Adshine Pharmaceuticals Logo"
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/adshine-logo1.png",
-    apple: "/adshine-logo1.png",
+    icon: "/logo adshine.jpeg",
+    apple: "/logo adshine.jpeg",
   },
 };
 

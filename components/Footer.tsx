@@ -37,11 +37,11 @@ export default function Footer() {
             <h4 className="font-bold text-gray-900 mb-6 uppercase tracking-widest text-[10px]">Quick Links</h4>
             <ul className="space-y-4">
               {[
-                { label: "Home",     href: "/" },
+                { label: "Home", href: "/" },
                 { label: "About Us", href: "/about" },
                 { label: "Products", href: "/products" },
-                { label: "Careers",  href: "/careers" },
-                { label: "Contact",  href: "/contact" },
+                { label: "Careers", href: "/careers" },
+                { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link href={link.href} className="text-gray-500 hover:text-gray-900 transition-colors">
@@ -56,19 +56,29 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 mb-6 uppercase tracking-widest text-[10px]">Divisions</h4>
             <div className="space-y-7">
+
+              <div>
+                <p className="font-semibold text-gray-900 mb-3 text-[13px]">gynaecologist</p>
+                <ul className="space-y-2.5 text-gray-500">
+                  <li>Infertility Care</li>
+                  <li>Fertility Treatments</li>
+                  <li>Pregnancy Care</li>
+                  <li>PCOS Management</li>
+                  <li>Menopause</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-semibold text-gray-900 mb-3 text-[13px]">Orthopedic</p>
+                <ul className="space-y-2.5 text-gray-500">
+                </ul>
+              </div>
+
               <div>
                 <p className="font-semibold text-gray-900 mb-3 text-[13px]">General Physician</p>
                 <ul className="space-y-2.5 text-gray-500">
                   <li>Gut &amp; Immunity</li>
                   <li>Iron &amp; Blood</li>
-                </ul>
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 mb-3 text-[13px]">Infertility Care</p>
-                <ul className="space-y-2.5 text-gray-500">
-                  <li>Pregnancy Care</li>
-                  <li>PCOS Management</li>
-                  <li>Menopause</li>
                 </ul>
               </div>
             </div>
@@ -105,9 +115,9 @@ export default function Footer() {
           </p>
           <div className="flex gap-5 text-gray-400">
             {[
-              { icon: Facebook,  label: "Facebook" },
-              { icon: Twitter,   label: "Twitter" },
-              { icon: Linkedin,  label: "LinkedIn" },
+              { icon: Facebook, label: "Facebook" },
+              { icon: Twitter, label: "Twitter" },
+              { icon: Linkedin, label: "LinkedIn" },
               { icon: Instagram, label: "Instagram" },
             ].map(({ icon: Icon, label }) => (
               <a key={label} href="#" aria-label={label} className="hover:text-gray-700 transition-colors">
