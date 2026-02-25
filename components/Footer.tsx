@@ -58,7 +58,7 @@ export default function Footer() {
             <div className="space-y-7">
 
               <div>
-                <p className="font-semibold text-gray-900 mb-3 text-[13px]">gynaecologist</p>
+                <p className="font-semibold text-gray-900 mb-3 text-[13px]">Gynaecologist</p>
                 <ul className="space-y-2.5 text-gray-500">
                   <li>Infertility Care</li>
                   <li>Fertility Treatments</li>
