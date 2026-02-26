@@ -20,31 +20,41 @@ const gynaecProducts: Product[] = [
   { id: 3, name: "SHINE 35", form: "Tablets", division: "gynaec", indication: "PCOS, Hirsutism, Acne", composition: "Cyproterone Acetate 2 mg + Ethinyl Estradiol 0.035 mg" },
   { id: 4, name: "PRO27", form: "Supplement", division: "gynaec", indication: "Protein Deficiency in Pregnancy & Lactation", composition: "Protein Hydrolysate + DHA + Iron + Folic Acid + Calcium + Zinc + Vitamins" },
   { id: 5, name: "ADFOL DHA", form: "Tablets", division: "gynaec", indication: "Pregnancy Nutrition, Neural Tube Defect Prevention", composition: "Folic Acid + DHA + Vitamin B12 + Iron" },
-  { id: 6, name: "RG NINE", form: "Sachets", division: "gynaec", indication: "Recurrent Pregnancy Loss, Foetal Growth", composition: "L-Arginine + Proanthocyanidins + Folic Acid + Zinc" },
+  { id: 6, name: "RG NINE", form: "Sachets", division: "gynaec", indication: "Recurrent Pregnancy Loss, Foetal Growth Support", composition: "L-Arginine + Proanthocyanidins + Folic Acid + Zinc" },
   { id: 7, name: "CALNINE", form: "Tablets", division: "gynaec", indication: "Postmenopausal Osteoporosis", composition: "Calcium Carbonate + Vitamin D3 + Magnesium + Zinc" },
   { id: 8, name: "CALNINE XT", form: "Tablets", division: "gynaec", indication: "Pregnancy & Lactation Calcium Support", composition: "Calcium Citrate Malate + Vitamin D3 + Vitamin K2-7 + Magnesium + Zinc" },
   { id: 9, name: "FERNINE XT", form: "Tablets", division: "gynaec", indication: "Iron Deficiency Anaemia", composition: "Ferrous Ascorbate + Folic Acid + Zinc" },
   { id: 10, name: "MYONINE DM", form: "Tablets", division: "gynaec", indication: "PCOS, Insulin Resistance, Irregular Menses", composition: "Myo-Inositol + D-Chiro Inositol + Folic Acid + Vitamin D3" },
   { id: 11, name: "CORAL D3", form: "Softgel Capsules", division: "gynaec", indication: "Vitamin D3 Deficiency in Pregnancy", composition: "Cholecalciferol (Vitamin D3)" },
   { id: 12, name: "ISOPAUSE", form: "Tablets", division: "gynaec", indication: "Menopausal Bone Loss", composition: "Calcium + Vitamin D3 + Soy Isoflavones + Magnesium" },
+  { id: 13, name: "CALPREG XT", form: "Tablets", division: "gynaec", indication: "Pregnancy & Lactation Calcium Support", composition: "Calcium Carbonate (500 mg elemental calcium) + Vitamin D3" },
+  { id: 14, name: "M-PRO DF EXTRA", form: "Dry Fruit Powder", division: "gynaec", indication: "Nutritional Supplement in Pregnancy & General Weakness", composition: "Almonds + Cashews + Pistachio + Dates + Saffron + Protein Blend + Vitamins & Minerals" },
+  { id: 15, name: "GESTOPREG 200", form: "Soft Gelatin Capsules", division: "gynaec", indication: "Threatened Abortion, Luteal Phase Support, Recurrent Pregnancy Loss", composition: "Micronised Progesterone 200 mg" },
+  { id: 16, name: "GESTOPREG 400", form: "Soft Gelatin Capsules", division: "gynaec", indication: "Threatened Abortion, Luteal Phase Support, Recurrent Pregnancy Loss", composition: "Micronised Progesterone 400 mg" },
+  { id: 17, name: "DIENOPREG", form: "Tablets", division: "gynaec", indication: "PCOS, Endometriosis, Hormonal Regulation", composition: "Dienogest 2 mg + Ethinyloestradiol 0.03 mg" }
 ];
 
 const orthoProducts: Product[] = [
-  { id: 1, name: "CALNINE", form: "Tablets", division: "ortho", indication: "Calcium & Vitamin D Deficiency", composition: "Calcium Carbonate + Vitamin D3" },
-  { id: 2, name: "CALNINE XT", form: "Tablets", division: "ortho", indication: "Diabetic & Drug Induced Bone Loss", composition: "Calcium Citrate Malate + Vitamin D3 + Vitamin K2-7 + Magnesium + Zinc" },
-  { id: 3, name: "CORAL D3", form: "Softgel Capsules", division: "ortho", indication: "Vitamin D3 Deficiency", composition: "Cholecalciferol (Vitamin D3)" },
+  { id: 1, name: "CALNINE", form: "Tablets", division: "ortho", indication: "Calcium & Vitamin D Deficiency, Osteoporosis", composition: "Calcium Carbonate + Vitamin D3" },
+  { id: 2, name: "CALNINE XT", form: "Tablets", division: "ortho", indication: "Diabetic & Drug Induced Bone Loss, Postmenopausal Osteoporosis", composition: "Calcium Citrate Malate + Vitamin D3 + Vitamin K2-7 + Magnesium + Zinc" },
+  { id: 3, name: "CORAL D3", form: "Softgel Capsules", division: "ortho", indication: "Vitamin D3 Deficiency, Bone Health Support", composition: "Cholecalciferol (Vitamin D3)" },
   { id: 4, name: "FERNINE XT", form: "Tablets", division: "ortho", indication: "Iron Deficiency Anaemia", composition: "Ferrous Ascorbate + Folic Acid + Zinc" },
-  { id: 5, name: "ADPAN DSR", form: "Capsules", division: "ortho", indication: "Acid Reflux & GERD", composition: "Pantoprazole + Domperidone (Sustained Release)" },
-  { id: 6, name: "PRO 27 DF", form: "Supplement", division: "ortho", indication: "Protein Deficiency, Family Nutrition", composition: "Protein Hydrolysate + DHA + Folic Acid + Iron + Vitamins & Minerals" },
+  { id: 5, name: "ADPAN DSR", form: "Capsules", division: "ortho", indication: "Acid Reflux & GERD (NSAID-Induced Gastritis Support)", composition: "Pantoprazole + Domperidone (Sustained Release)" },
+  { id: 6, name: "PRO 27 DF", form: "Supplement", division: "ortho", indication: "Protein Deficiency, Muscle Recovery & Family Nutrition", composition: "Protein Hydrolysate + DHA + Folic Acid + Iron + Vitamins & Minerals" },
+  { id: 7, name: "CALPREG XT", form: "Tablets", division: "ortho", indication: "Calcium Supplementation, Bone Strength", composition: "Calcium Carbonate (500 mg elemental calcium) + Vitamin D3" },
+  { id: 8, name: "ROXCLAV 625", form: "Tablets", division: "ortho", indication: "Bone & Joint Infections, Post-Surgical Infections", composition: "Amoxicillin + Potassium Clavulanate" },
+  { id: 9, name: "TRIPREG D", form: "Tablets", division: "ortho", indication: "Pain, Inflammation & Post-Traumatic Swelling", composition: "Trypsin + Bromelain + Rutoside Trihydrate + Diclofenac Sodium" }
 ];
-
 const physicianProducts: Product[] = [
   { id: 1, name: "LACTOJOY", form: "Veg Capsules", division: "physician", indication: "Gut Dysbiosis, IBS, Diarrhoea", composition: "Lactobacillus rhamnosus + Lactobacillus reuteri + Lactobacillus acidophilus" },
-  { id: 2, name: "CALNINE XT", form: "Tablets", division: "physician", indication: "Diabetic & Drug Induced Bone Loss", composition: "Calcium Citrate Malate + Vitamin D3 + Vitamin K2-7 + Magnesium + Zinc" },
+  { id: 2, name: "CALNINE XT", form: "Tablets", division: "physician", indication: "Diabetic & Drug Induced Bone Loss, Osteoporosis", composition: "Calcium Citrate Malate + Vitamin D3 + Vitamin K2-7 + Magnesium + Zinc" },
   { id: 3, name: "FERNINE XT", form: "Tablets", division: "physician", indication: "Iron Deficiency Anaemia", composition: "Ferrous Ascorbate + Folic Acid + Zinc" },
   { id: 4, name: "CORAL D3", form: "Softgel Capsules", division: "physician", indication: "Vitamin D3 Deficiency", composition: "Cholecalciferol (Vitamin D3)" },
   { id: 5, name: "ADPAN DSR", form: "Capsules", division: "physician", indication: "Acid Reflux & GERD", composition: "Pantoprazole + Domperidone (Sustained Release)" },
   { id: 6, name: "PRO 27 DF", form: "Supplement", division: "physician", indication: "Protein Deficiency, Family Nutrition", composition: "Protein Hydrolysate + DHA + Folic Acid + Iron + Vitamins & Minerals" },
+  { id: 7, name: "ROXCLAV 625", form: "Tablets", division: "physician", indication: "Respiratory, Urinary & Soft Tissue Infections", composition: "Amoxicillin + Potassium Clavulanate" },
+  { id: 8, name: "CALPREG XT", form: "Tablets", division: "physician", indication: "Calcium Supplementation, Bone Health Support", composition: "Calcium Carbonate (500 mg elemental calcium) + Vitamin D3" },
+  { id: 9, name: "M-PRO DF EXTRA", form: "Dry Fruit Powder", division: "physician", indication: "Nutritional Supplement, General Weakness, Recovery Support", composition: "Almonds + Cashews + Pistachio + Dates + Saffron + Protein Blend + Vitamins & Minerals" }
 ];
 
 function ProductsContent() {

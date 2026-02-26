@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 export default function FounderMessage() {
   return (
     <section className="bg-white font-sans">
